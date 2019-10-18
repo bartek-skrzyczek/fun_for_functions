@@ -5,6 +5,6 @@ fs.readFile('./text.txt', {encoding: 'utf-8'}, (err, data) => {
     let obj = data
     .trim()
     .split('\n')
-    .map(line => );
+    .map(line => line.split('\t'));
     console.log('output', obj);
   })
